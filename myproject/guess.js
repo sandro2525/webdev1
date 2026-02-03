@@ -1,5 +1,5 @@
 let num = prompt("put ur number in");
-let number = 19;
+let number = 30;
 while (num != number) {
 if (num > number) {
 alert("ur number is higher");
