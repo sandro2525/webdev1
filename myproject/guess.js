@@ -8,6 +8,6 @@ alert("ur number is higher");
 alert("ur number is lower");
 }
 }
-if ((num === number)) {
+if ((num == number)) {
 alert("u got it right");
 }
