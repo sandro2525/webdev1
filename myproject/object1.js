@@ -29,7 +29,7 @@ for (let i = 0; i < products.length; i++) {
   const product = products[i];
 
   if (product.inStock) {
-    const finalPrice = product.price + (product.price * product.discount / 100);
+    const finalPrice = product.price - (product.price * product.discount / 100);
     console.log(product.name + " available.  price: " + finalPrice);
   } else {
     console.log(" not available");
