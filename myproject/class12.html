@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="class12.js"></script>
+<div class="container">
+<h2>Registration Form</h2>
+<form id="registerForm">
+<label>Username:</label>
+<input type="text" id="username">
+<label>Password:</label>
+<input type="password" id="password">
+<label>Age: <span id="ageValue">18</span></label>
+<input type="range" id="age" min="1" max="100" value="18">
+<label>Gender:</label>
+<input type="checkbox" id="male"> Male
+<input type="checkbox" id="female"> Female
+<button type="submit">Register</button>
+</form>
+<div id="result"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
