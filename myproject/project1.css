@@ -1,0 +1,143 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f6f8fb;
+color:#333;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+border-bottom:1px solid #eee;
+}
+
+.logo-pill{
+background:#3b82f6;
+color:white;
+padding:6px 14px;
+border-radius:20px;
+font-weight:bold;
+}
+
+.logo p{
+font-size:11px;
+color:#777;
+margin:4px 0 0;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#555;
+}
+
+.nav-icons button{
+border:none;
+background:#eef2f7;
+padding:10px;
+margin-left:8px;
+border-radius:50%;
+cursor:pointer;
+}
+
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.badge{
+border:1px solid #dbeafe;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+color:#2563eb;
+}
+
+.hero h1{
+font-size:40px;
+margin:20px 0;
+}
+
+.hero p{
+color:#666;
+line-height:1.6;
+}
+
+.buttons{
+margin-top:25px;
+}
+
+.primary{
+background:#3b82f6;
+color:white;
+border:none;
+padding:12px 22px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.secondary{
+background:white;
+border:1px solid #ddd;
+padding:12px 22px;
+border-radius:25px;
+margin-left:10px;
+cursor:pointer;
+}
+
+
+
+.featured{
+background:white;
+padding:25px;
+border-radius:15px;
+width:320px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.product-image{
+height: 400px;
+background:#eef2f7;
+border-radius:10px;
+margin:15px 0;;
+}
+
+.product-bottom{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-top:10px;
+}
+
+.stock{
+color:#16a34a;
+}
+
+
+.products{
+padding:0 80px 80px;
+}
+
+.filters{
+margin-top:15px;
+margin-left: 1300px;
+}
+
+.filters button{
+border:1px solid #ddd;
+background:white;
+padding:8px 15px;
+border-radius:20px;
+margin-right:10px;
+cursor:pointer;
+}
