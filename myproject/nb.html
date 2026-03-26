@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Me Project</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+      font-family: Arial;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin: 20px auto;
+      display: none;
+      line-height: 200px;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      color: white;
+    }
+
+    #closeBtn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="mainBtn" onclick="showBox()">Click Me</button>
+
+  <div id="box">
+    <span id="closeBtn" onclick="hideBox()">X</span>
+    this is a red box
+  </div>
+
+<script>
+  function showBox() {
+    const box = document.getElementById("box");
+    const button = document.getElementById("mainBtn");
+
+    box.style.display = "block";   
+    button.style.display = "none"; 
+  }
+
+  function hideBox() {
+    const box = document.getElementById("box");
+    const button = document.getElementById("mainBtn");
+
+    box.style.display = "none";    
+    button.style.display = "inline-block"; 
+  }
+</script>
+
+</body>
+</html>
