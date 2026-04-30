@@ -20,9 +20,10 @@
         <h5 class="Contact">Contact</h5>
       </div>
 
+      <!-- UPDATED NAV ACTIONS (cart count added) -->
       <div class="nav-actions">
         <button class="glass">🔍</button>
-        <button class="cart">🛒</button>
+        <button class="cart">🛒 <span id="cart-count">0</span></button>
       </div>
     </div>
 
@@ -47,6 +48,7 @@
           </button>
         </div>
       </div>
+
       <div class="half2">
         <div class="product-card">
           <div class="image-area">
@@ -71,12 +73,14 @@
           javascript
         </p>
       </div>
+
       <div class="filter-buttons">
         <button>All</button>
         <button>Clothing</button>
         <button>Accessories</button>
         <button>Home</button>
       </div>
+
       <div class="products-grid">
         <div class="product-card">
           <div class="image-area">
@@ -146,6 +150,12 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- ✅ NEW CART SECTION -->
+    <div class="cart-box">
+      <h4>Your Cart</h4>
+      <div id="cart-items"></div>
     </div>
 
     <footer class="footer">

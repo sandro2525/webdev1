@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Map Example</title>
+</head>
+<body>
+    <h1>Custom Map Function</h1>
+    <p id="output"></p>
+
+    <script>
+        const numbers = [5, 10, 15, 20];
+        function myMap(array, callback) {
+            const result = [];
+            for (let i = 0; i < array.length; i++) {
+                result.push(callback(array[i], i, array));
+            }
+            return result;
+        }
+        const divided = myMap(numbers, num => num / 5);
+        document.getElementById("output").textContent = divided.join(", ");
+    </script>
+</body>
+</html>
