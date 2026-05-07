@@ -18,9 +18,7 @@ app.get("/products", (req, res) => {
 });
 
 app.get("/products/:id", (req, res) => {
-  const product = products.find(
-    (p) => p.id === Number(req.params.id)
-  );
+  const product = products.find((p) => p.id === Number(req.params.id));
 
   if (!product) {
     return res.status(404).json({
@@ -49,9 +47,7 @@ app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
   const user = users.find(
-    (u) =>
-      u.username === username &&
-      u.password === password
+    (u) => u.username === username && u.password === password,
   );
 
   if (!user) {
