@@ -13,8 +13,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "bugs": {
     "url": "https://github.com/sandro2525/webdev1/issues"
   },
   "homepage": "https://github.com/sandro2525/webdev1#readme"
+=======
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sandro2525/webdev1/issues"
+  },
+  "homepage": "https://github.com/sandro2525/webdev1#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+>>>>>>> b0bd80723b8489348a93ffb371d86370edb5b12d
 }

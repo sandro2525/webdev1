@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Static Big Box with Dynamic Little Box</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #eee;
+      font-family: Arial;
+    }
+
+    .big-box {
+      width: 400px;
+      height: 400px;
+      background: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+    }
+
+    .small-box {
+      width: 200px;
+      height: 200px;
+      background: blueviolet;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+
+    .small-box img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .small-box a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="big-box" id="bigBox"></div>
+
+<script>
+  const bigBox = document.getElementById("bigBox");
+
+  const smallBox = document.createElement("div");
+  smallBox.setAttribute("class", "small-box");
+
+  const img = document.createElement("img");
+  img.setAttribute("src", "https://via.placeholder.com/100");
+  img.setAttribute("alt", "photo");
+
+  const link = document.createElement("a");
+  link.setAttribute("href", "https://example.com");
+  link.setAttribute("target", "_blank");
+  link.textContent = "Go to site";
+
+  smallBox.appendChild(img);
+  smallBox.appendChild(link);
+  bigBox.appendChild(smallBox);
+</script>
+
+</body>
+</html>
