@@ -1,28 +1,11 @@
-import express from "express";
+
 const app = express();
-
-app.use(express.json());
-
-let products = [];
-
+const products = [
+    { id: 1, name: "dexter" },
+    { id: 2, name: "breaking bad" },
+    { id: 3, name: "prison break" },
+    { id: 4, name: "game of thrones" }
+];
 app.get("/products", (req, res) => {
-  res.json(products);
-});
-
-app.get("/products/:id", (req, res) => {
-  const product = products.find((p) => p.id == req.params.id);
-  res.json(product);
-});
-
-app.post("/products", (req, res) => {
-  const newProduct = {
-    id: Date.now(),
-    ...req.body,
-  };
-  products.push(newProduct);
-  res.json(newProduct);
-});
-
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
-});
+    res.send(products);
+});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
