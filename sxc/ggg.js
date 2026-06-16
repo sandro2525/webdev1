@@ -1,9 +1,5 @@
-import express from "express";
 
-const app = express();
-app.use(express.json());
-
-function makebed(caallback) {
+function makebed(callback) {
   setTimeout(() => {
     console.log("bed is made");
       callback();
@@ -17,7 +13,7 @@ function cleanDesk(callback) {
   }, 4000);
 }
 
-function playVideogames(caallback) {
+function playVideogames(callback) {
   setTimeout(() => {
     console.log("playing video games");
     callback();
@@ -29,3 +25,10 @@ function sleep() {
     console.log("going to sleep");
   }, 1000);
 }
+
+
+makebed(() => {
+  cleanDesk(() => {
+    playVideogames(() => {  sleep(); });
+  });
+}); 
